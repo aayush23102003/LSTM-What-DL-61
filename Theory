@@ -1,0 +1,19 @@
+LSTM arosed because the RNN(s) were not able to handle the long sequences because of the exploding/vanishing gradient problem.
+
+When we are given the task to predict whether a story is good or bad then we process the story word by word and maintain 2 contexts called the short-term and the lon-term context.
+Our mind then grabs those things from the short term context which are important for the long term context and transfers that to the long term context.
+
+When we heard of 1000 years then i thought that it is imp. so i moved it to long term context ,similarly the city pratapgarh then when i heard vikram then i thought it is also imp
+and moved it from the short term to long term context but when vikram died and defeated then i thought that it is not imp. so i removed it from the long term context.sly, story goes 
+ahead.
+
+finally the story is good or bad depends on how at last the long term context looks like and this is how sequentially i have analyzed the story.
+
+In RNN , I have a single line on which both the long term and short term context needs to be maintained.and eventually the short term context dominates and long term context is 
+forgotten.
+
+So, in LSTM we maintain one more path. In the upper path, we maintain the long term memory and in the lower path we maintain the short term memory.
+So, if in the first step i thought that something is imp. then it will reach the last if not removed.
+
+This LSTM long term path is called cell state.
+The architecture inside the LSTM core is a difficult one bcz. we dont only have to maintain the short term and long term memory rather we need to make communication b/w them as well.
